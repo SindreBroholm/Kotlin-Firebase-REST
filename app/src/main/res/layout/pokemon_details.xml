@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pokemon_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvContentCard"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/im_pokemonImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/DarkYellow"
+                android:contentDescription="@string/pokemon_image"
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/pokemon_name"
+            android:gravity="start"
+            app:layout_constraintBottom_toTopOf="@+id/cvContentCard"
+            app:layout_constraintEnd_toStartOf="@+id/tv_pokemon_hp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_pokemon_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="104dp"
+            android:gravity="end"
+            android:text="@string/pokemon_hp"
+            app:layout_constraintBottom_toTopOf="@+id/cvContentCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_pokemon_physics"
+            android:layout_width="202dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="@string/pokemon_physics"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvContentCard" />
+
+        <TextView
+            android:id="@+id/ph_types"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/pokemon_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_physics" />
+
+        <TextView
+            android:id="@+id/tv_pokemon_types"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/api_input_types"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ph_types"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_physics" />
+
+        <TextView
+            android:id="@+id/ph_attack"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/pokemon_attack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ph_types" />
+
+        <TextView
+            android:id="@+id/tv_pokemon_attack"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/api_input_attack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ph_attack"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_types" />
+
+        <TextView
+            android:id="@+id/ph_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/pokemon_defence"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ph_attack" />
+
+        <TextView
+            android:id="@+id/tv_pokemon_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/api_input_defence"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ph_defense"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_attack" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/Blue"
+            app:itemIconSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_navigation_menu" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

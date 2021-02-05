@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=7B:7F:26:01:FD:0E:13:B6:1F:D0:4C:61:4A:2F:13:A1:BD:30:6E:C9%3Bno.sbs.pokedex.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    no.sbs.pokedex.activities
+
+    SHA-1 certificate fingerprint:
+    7B:7F:26:01:FD:0E:13:B6:1F:D0:4C:61:4A:2F:13:A1:BD:30:6E:C9
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAHviOVrg14GhOsF-TaQ1ctLbVY_9emoao</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/Home"/>
+    <item
+        android:id="@+id/nav_pokedex"
+        android:enabled="true"
+        android:icon="@drawable/ic_pokedex"
+        android:title="@string/Pokedex"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/Profile"/>
+    <item
+        android:id="@+id/nav_world"
+        android:enabled="true"
+        android:icon="@drawable/ic_map"
+        android:title="@string/Map"/>
+</menu>
