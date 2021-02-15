@@ -4,27 +4,23 @@ package no.sbs.pokedex.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import no.sbs.pokedex.R
-import no.sbs.pokedex.data.FirstGen
-import no.sbs.pokedex.utils.PokemonService
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        bottomNav()
+    }
 
+    private fun bottomNav() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
-        bottomNav.setOnNavigationItemSelectedListener{
+        bottomNav.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_home -> {
                     setContent("Home")

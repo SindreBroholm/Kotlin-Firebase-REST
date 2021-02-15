@@ -23,4 +23,5 @@
     <string name="api_input_attack">Attack</string>
     <string name="pokemon_defence">Defence</string>
     <string name="api_input_defence">Defence</string>
+    <string name="maps_api_key">AIzaSyAHviOVrg14GhOsF-TaQ1ctLbVY_9emoao</string>
 </resources>
