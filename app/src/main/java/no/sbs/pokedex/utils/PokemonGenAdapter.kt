@@ -14,7 +14,7 @@ class PokemonGenAdapter(fm : FragmentManager): FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return when(position){
-            0 -> { GenI() }
+            0 -> {GenI()}
             1 -> {GenII()}
             2 -> {GenIII()}
             3 -> {GenIV()}
@@ -36,7 +36,7 @@ class PokemonGenAdapter(fm : FragmentManager): FragmentPagerAdapter(fm) {
             5 -> "VI" //"X & Y"
             6 -> "VII" //"Sun & Moon"
             7 -> "VIII" //"Sword & Shield"
-            else -> "Red & Blue, Yellow"
+            else -> "I"
         }
     }
 }

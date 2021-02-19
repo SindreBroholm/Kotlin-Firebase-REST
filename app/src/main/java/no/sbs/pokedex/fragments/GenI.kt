@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import no.sbs.pokedex.R
-import no.sbs.pokedex.activities.LoadGenI
 import no.sbs.pokedex.activities.PokemonDetailActivity
 import no.sbs.pokedex.data.PokemonList
 import no.sbs.pokedex.utils.PokemonService

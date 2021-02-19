@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.google.gson.JsonElement
 import com.koushikdutta.ion.Ion
 import no.sbs.pokedex.R
@@ -82,7 +83,7 @@ class PokemonDetailActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<PokemonDetails>, t: Throwable) {
-                println("ops...")
+                //todo(do something here)
             }
         })
     }
@@ -90,14 +91,14 @@ class PokemonDetailActivity : AppCompatActivity() {
     private fun getPokemonTypes(response: Response<PokemonDetails>,): String {
         var pokemonType = ""
         val listPokemonResponse: ArrayList<JsonElement?> = ArrayList<JsonElement?>()
-        val getPokemonTypes = response.body()?.types?.asJsonArray  //array
+        val getPokemonTypes = response.body()?.types?.asJsonArray
 
         if (getPokemonTypes != null) {
             for (i in getPokemonTypes) {
                 listPokemonResponse.add(i?.asJsonObject?.get("type")?.asJsonObject?.get("name"))
-                // API getters
             }
         }
+
         for (i in listPokemonResponse) {
             if (listPokemonResponse.size > 1) {
                 pokemonType += "| ${i?.asString?.toUpperCase()} | "
@@ -105,7 +106,7 @@ class PokemonDetailActivity : AppCompatActivity() {
                 pokemonType = "| ${i?.asString?.toUpperCase()} |"
             }
         }
-        pokemonType
+
         return pokemonType
     }
 

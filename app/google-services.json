@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623224964315",
+    "project_id": "pokedexfirebasemaps",
+    "storage_bucket": "pokedexfirebasemaps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623224964315:android:768c75f41a1688160778fe",
+        "android_client_info": {
+          "package_name": "no.sbs.pokedex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623224964315-3qrj3gghe608hu6pop6c1utkdvbrtton.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7odh2h-PkM5coNmI_WcmXPQNky6vGRlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623224964315-3qrj3gghe608hu6pop6c1utkdvbrtton.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

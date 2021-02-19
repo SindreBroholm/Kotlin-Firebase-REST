@@ -7,101 +7,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-<com.google.android.material.appbar.AppBarLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".activities.PokemonList"
-    android:id="@+id/rel_main"
-    >
-    <androidx.appcompat.widget.Toolbar
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rel_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toolbar"
-        android:background="@color/Blue"
-        />
+        android:layout_height="742dp"
+        tools:context=".activities.ShowPokemonByGenerationActivity">
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/tablayout"
-        android:background="@color/Blue"
-        app:tabMode="fixed"
-        app:tabGravity="fill"
-        app:tabIndicatorColor="@color/Yellow">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genI"
-            android:icon="@drawable/ic_gen_i" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genII"
-            android:icon="@drawable/ic_gen_ii"/>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genIII"
-            android:icon="@drawable/ic_gen_iii" />
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genIV"
-            android:icon="@drawable/ic_gen_iv" />
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genV"
-            android:icon="@drawable/ic_gen_v" />
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genVI"
-            android:icon="@drawable/ic_gen_vi" />
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genVII"
-            android:icon="@drawable/ic_gen_vi" />
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genVIII"
-            android:icon="@drawable/ic_gen_vi" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="573dp">
-
-       <!-- <ListView
-            android:id="@+id/listview"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/bottomNav"
-            android:layout_below="@+id/tablayout"
-            android:layout_alignParentStart="true" />-->
+            android:background="@color/Blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/Yellow"
+            app:tabMode="fixed">
 
-    </androidx.viewpager.widget.ViewPager>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_i" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_alignParentBottom="true"
-        app:itemBackground="@color/Blue"
-        app:itemIconSize="24dp"
-        app:menu="@menu/bottom_navigation_menu"
-        />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_ii" />
 
-</com.google.android.material.appbar.AppBarLayout>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genIII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_iii" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_iv" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_v" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genVI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_vi" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genVII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_vi" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/genVIII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_gen_vi" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="573dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/Blue"
+            app:itemIconSize="24dp"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
